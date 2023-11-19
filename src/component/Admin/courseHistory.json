@@ -1,0 +1,33 @@
+[
+    {
+        "courseTitle":"MPI",
+        "cosecutive":"yes",
+        "teacherName":"Nayon Karmoker",
+        "teacherEmail":"nayonkarmoker3@gmail.com"
+    },
+    {
+        "courseTitle":"SWE",
+        "cosecutive":"no",
+        "teacherName":"",
+        "teacherEmail":""
+    },{
+        "courseTitle":"MPIuyh",
+        "cosecutive":"yes",
+        "teacherName":"Nayon Karmoker",
+        "teacherEmail":"nayonkarmoker3@gmail.com"
+    },
+    {
+        "courseTitle":"MPI LAB",
+        "cosecutive":"yes",
+        "teacherName":"Nayon Karmoker",
+        "teacherEmail":"nayonkarmoker3@gmail.com"
+    },
+    {
+        "courseTitle":"MPIYH",
+        "cosecutive":"no",
+        "teacherName":"",
+        "teacherEmail":""
+    }
+
+
+]

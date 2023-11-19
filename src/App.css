@@ -2,11 +2,24 @@
   text-align: center;
 }
 
+body{
+    font-family: 'Josefin Sans', sans-serif;
+background: linear-gradient(90deg, #ecf1f6, #e9f5f8, #d9f0f4, #caf1f7);
+}
+.back{
+
+background-image: url(background.jpg);
+    background-size: cover;
+
+
+  }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+a{
+  text-decoration: none;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +48,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+ /* @media (max-width: 991px){
+  body{
+      background: black;
+  }
+}  */
+
+.back .card{
+  border-radius: 5%;
+  background: linear-gradient(90deg, #ecf1f6, #e9f5f8, #d9f0f4, #caf1f7);
+}
+img{
+  height: 250px;
+} 
+.inputs{
+  border: 1px solid black;
+}
+.teacherProfile{
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin-top: -75px;
+  position: relative;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  border: 5px solid #f9f3f3; 
+}
+
+.teacherCard{
+  border-radius: 5%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
 }
