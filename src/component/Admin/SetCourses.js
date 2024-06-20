@@ -192,7 +192,7 @@ setCourses([])
 <input type="radio" id="year" name="year" onChange={handleChanges}  value="4th"/>&nbsp;
 <label for="4th">4th&nbsp;&nbsp;</label>
 
- </li>
+ </li>  
     <li class="list-group-item fs-5"> <label for="coursespleFormControlInput1" className="form-label fw-semibold ">Semester:&nbsp;&nbsp; </label>
               <input type="radio" onChange={handleChanges} id="semester" name="semester" value="1st"/>&nbsp;
 <label for="1st">1st&nbsp;&nbsp;</label>
@@ -205,7 +205,7 @@ setCourses([])
 
       <button disabled={year===""|| courses.length===0||available==="no"}  className="btn btn-dark mb-3 d-block m-auto"  onClick={deleteAllCourses}>Delete Courses</button> 
 
-  </div>
+  </div> 
 
                      
               {/* <form onSubmit={allInfo}>

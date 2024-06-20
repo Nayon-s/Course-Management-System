@@ -60,7 +60,7 @@ const common=assign.map((course)=>course.courseDetails.courseTitle)
   const duplicate = common.filter((title, index) => {
     return common.indexOf(title) !== index;
   });
-  
+   
  const newFilteredCommon=filteredCommon.concat(duplicate)
       // console.log(newFilteredCommon); 
 

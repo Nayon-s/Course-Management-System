@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   Link
 } from "react-router-dom";
+import 'animate.css';
 
 
 const AdminLogin = () => {
@@ -126,10 +127,16 @@ setOtp(e.target.value);
 
  
   return (
-    <div className='back d-flex justify-content-center align-items-center vh-100 '>
+    <>
+    <div className="container text-center mt-5 mb-5 fs-2 text fw-semibold">
+          <i class="fas fa-graduation-cap"></i>Welcome to CMS
+          <i class="fas fa-university"></i>{" "}
+        </div>
+    <div className="mb-5"></div>
+    <div className='mt-5 back d-flex justify-content-center align-items-center vh-95 '>
       {!showOTP&& (
         <>
-       <div class="card mt-3 shadow-lg" style={{"width": "24rem", backgroundColor:"aliceblue"}}>
+       <div class="card inputs mt-3 shadow-lg animate__animated animate__fadeInDown" style={{"width": "24rem", backgroundColor:"aliceblue"}}>
        <h3 className="card-title text-center mt-4 mb-2"> <i class="fa-solid fa-user-tie"></i> Admin LogIn</h3>
 
   <div class="card-body">
@@ -148,6 +155,9 @@ setOtp(e.target.value);
   <input type="email" class="form-control inputs"  id='email' value={email} onChange={handleChange}  placeholder="Enter your Email"/>
 </div>
 <button type="button" disabled={email===""||department===""} class="btn btn-dark mt-1 mb-3" onClick={login}>Sign In</button>
+
+<p className="mt-3 fw-semibold">Not a Director? <Link className="fw-bold " aria-current="page" to="/">  LogIn Here</Link> </p>
+
    </div>
 </div>
         </>
@@ -167,7 +177,7 @@ setOtp(e.target.value);
   
   </div>    
      
-        <button className="btn btn-dark mt-1 mb-3" disabled={otp===""} onClick={verify}>Verify otp
+        <button className="btn btn-dark mt-1 mb-3" disabled={otp===""} onClick={verify}>Verify OTP
         </button>
 
         
@@ -177,7 +187,7 @@ setOtp(e.target.value);
         </>
       )}
       <ToastContainer />
-    </div>
+    </div></>
   )
 }
 

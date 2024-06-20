@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import {
   Link
 } from "react-router-dom";
+import 'animate.css';
 
 
 const Login = () => {
@@ -48,7 +49,7 @@ setOtp(e.target.value);
       setCredentials({
         email:''
       })
-      setShowOTP(true);
+      setShowOTP(true); 
 
       setTeacherInfo(json.teacher)
       console.log(teacherInfo)
@@ -70,10 +71,10 @@ setOtp(e.target.value);
             closeOnClick: true,
             pauseOnHover: true,
             draggable: true,
-            progress: undefined,
-            theme: "light",
+            progress: undefined, 
+            theme: "light",   
             });
-        }
+        } 
       })
       .catch((error) => {
         console.error("Error sending email:", error);
@@ -122,19 +123,24 @@ setOtp(e.target.value);
 
  
   return (
-    <div className='back  d-flex justify-content-center align-items-center vh-100 '>
+    <>
+    <div className="container text-center mt-5 mb-5 fs-2 text fw-semibold">
+          <i class="fas fa-graduation-cap"></i>Welcome to CMS
+          <i class="fas fa-university"></i>{" "}
+        </div>
+    <div className='back  d-flex justify-content-center align-items-center vh-80'>
       {!showOTP&& (
-        <>
-       <div className="card mt-3 shadow-lg" style={{"width": "24rem", backgroundColor:"aliceblue"}}>
+        <> 
+       <div className="card mt-5 inputs shadow-lg animate__animated animate__fadeInDown" style={{"width": "24rem", backgroundColor:"aliceblue"}}>
        <h3 className="card-title text-center mt-4 mb-2"> <i className="fa-solid fa-user-tie"></i> Teacher LogIn</h3>
 
   <div className="card-body">
   <div className="mb-3">
   <label for="exampleFormControlInput1" className="form-label fs-5 fw-semibold">Email Address</label>
-  <input type="email" className="form-control"  id='email' value={email} onChange={handleChange}  placeholder="Enter your Email"/>
+  <input type="email" className="form-control inputs"  id='email' value={email} onChange={handleChange}  placeholder="Enter your Email"/>
 </div>
 <button type="button" disabled={email===""} className="btn btn-dark mt-1 mb-3" onClick={login}>Sign In</button>
-<p className="mt-3 fw-semibold">Don't have an account? <Link className="fw-bold " aria-current="page" to="/teacher/signup">  SignUp Here</Link> </p>
+<p className="mt-3 fw-semibold">Are you a Director? <Link className="fw-bold " aria-current="page" to="/admin/login">  LogIn Here</Link> </p>
    </div>
 </div>
         </>
@@ -143,14 +149,14 @@ setOtp(e.target.value);
       {showOTP&& (
         <>
         <div className="card mt-3 fs-5" style={{"width": "24rem", backgroundColor:"aliceblue"}}>
-        <h3 className="card-title text-center mt-4 mb-2"> <i className="fa-solid fa-user-tie"></i> Teacher Login</h3>
+        <h3 className="card-title text-center mt-4 mb-2"> <i className="fa-solid fa-user-tie"></i> Teacher LogIn</h3>
 
   <div className="card-body">
   
 <div className="mb-3">
   <label htmlFor="otp" className="form-label fw-semibold">Enter OTP</label>
     <input type="text" value={otp} onChange={changes} 
-          placeholder="Enter OTP" className="form-control" id="otp" />
+          placeholder="Enter OTP" className="form-control inputs" id="otp" />
   
   </div>    
      
@@ -164,7 +170,7 @@ setOtp(e.target.value);
         </>
       )}
       <ToastContainer />
-    </div>
+    </div></>
   )
 }
 

@@ -136,7 +136,7 @@ const Profile = (props) => {
               {/* <div></div> */}
               <div className="col-lg-4 col-md-6 col-sm-12 mt-3">
                 <div
-                  className="alert alert-success mt-5 fs-3 fw-semibold text-center"
+                  className="alert bg-dark mt-5 fs-3 fw-semibold text-center text-light" style={{backgroundColor:"black"}}
                   role="alert"
                 >
                   Courses Applied
@@ -172,7 +172,7 @@ const Profile = (props) => {
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 mt-3">
                 <div
-                  className="alert alert-success mt-5 fs-3 fw-semibold text-center"
+                  className="alert bg-dark text-light mt-5 fs-3 fw-semibold text-center"
                   role="alert"
                 >
                   Courses Assigned

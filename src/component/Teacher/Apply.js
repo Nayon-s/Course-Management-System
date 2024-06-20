@@ -150,7 +150,7 @@ const Apply = (props) => {
                                             ) : (
                                                 <>
                                                     {" "}
-                                                    <div className="alert text-center  fs-4 fw-semibold alert-primary">
+                                                    <div className="alert text-center  fs-4 fw-semibold alert-primar" style={{backgroundColor:"azure"}}>
 
                                                         {index.year} Year {index.semester} Semester
                                                     </div>

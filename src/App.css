@@ -4,11 +4,11 @@
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-background: linear-gradient(90deg, #ecf1f6, #e9f5f8, #d9f0f4, #caf1f7);
-}
+    background: linear-gradient(90deg, #ecf1f6, #e9f5f8, #d9f0f4, #caf1f7);
+  }
 .back{
 
-background-image: url(background.jpg);
+/* background-image: url(background.jpg); */
     background-size: cover;
 
 
@@ -57,7 +57,7 @@ a{
 
 .back .card{
   border-radius: 5%;
-  background: linear-gradient(90deg, #ecf1f6, #e9f5f8, #d9f0f4, #caf1f7);
+  /* background: linear-gradient(90deg, #ecf1f6, #e9f5f8, #d9f0f4, #caf1f7); */
 }
 img{
   height: 250px;
@@ -83,3 +83,21 @@ img{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
 }
+
+.text {
+  font-size: 5em;
+  letter-spacing: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(25);
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}    
