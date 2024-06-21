@@ -125,8 +125,11 @@ setOtp(e.target.value);
   return (
     <>
     <div className="container text-center mt-5 mb-5 fs-2 text fw-semibold">
-          <i class="fas fa-graduation-cap"></i>Welcome to CMS
+          <div className='d-none d-sm-block '>
+            <i class="fas fa-graduation-cap"></i>Welcome to CMS
           <i class="fas fa-university"></i>{" "}
+          </div>
+          
         </div>
     <div className='back  d-flex justify-content-center align-items-center vh-80'>
       {!showOTP&& (
