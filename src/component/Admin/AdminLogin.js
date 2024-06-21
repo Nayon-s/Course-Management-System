@@ -138,7 +138,7 @@ setOtp(e.target.value);
       {!showOTP&& (
         <>
        <div class="card inputs mt-3 shadow-lg animate__animated animate__fadeInDown" style={{"width": "24rem", backgroundColor:"aliceblue"}}>
-       <h3 className="card-title text-center mt-4 mb-2"> <i class="fa-solid fa-user-tie"></i> Admin LogIn</h3>
+       <h3 className="card-title text-center mt-4 mb-2"> <i class="fa-solid fa-user-tie"></i> Director LogIn</h3>
 
   <div class="card-body">
   <div class="mb-3">
