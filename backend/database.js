@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 async function connection() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/courses');
+  await mongoose.connect('mongodb+srv://nayon49:smith49@cluster0.yl2sw9b.mongodb.net/courses?retryWrites=true&w=majority&appName=Cluster0'); 
     console.log("database connected")
 }
 

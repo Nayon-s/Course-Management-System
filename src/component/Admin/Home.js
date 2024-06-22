@@ -54,11 +54,11 @@ const Home = (props) => {
                     alt="..."
                   />
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREUr9rTWqFy9-SbRKlrzV230wVzyoOkRZthrh-Fmzdqpk7etqe9UqGyiJ7zWWX3D0KYcQ&usqp=CAU"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtgFFcGDOgUQGTC748i388C4EhfNCkX7rfg&s"
                     className="card-img-top img-fluid rounded-circle teacherProfile"
                     alt=""
                   />
-                  <h5 className="card-title text-center fs-5 fw-semibold mt-1">Admin Info</h5>
+                  <h5 className="card-title text-center fs-5 fw-semibold mt-1">Director Info</h5>
 
                   <div className="card-body fs-6">
                   <ul className="list-group list-group-flush">
