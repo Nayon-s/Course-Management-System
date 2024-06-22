@@ -42,7 +42,7 @@ setOtp(e.target.value);
       },
        body: JSON.stringify({email:email})
   
-    })
+    }) 
     const json=await response.json()
     console.log(json)
     if(json.status==='Success'){
@@ -51,7 +51,7 @@ setOtp(e.target.value);
       })
       setShowOTP(true); 
 
-      setTeacherInfo(json.teacher)
+       setTeacherInfo(json.teacher)
       console.log(teacherInfo)
       const emailBody = `Your OTP: ${code}`;
 

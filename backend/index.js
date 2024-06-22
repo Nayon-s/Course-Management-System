@@ -1,4 +1,4 @@
-const connection=require('./backend/database.js')
+const connection=require('./database.js')
 connection()
 
   
@@ -12,10 +12,10 @@ app.use(cors())
 app.use(express.json())
 
 
-const teachers = require('./backend/models/teachers.js')
+const teachers = require('./models/teachers.js')
  
-app.use('/api/authenticate',  require('./backend/routes/authenticate.js'))
-app.use('/api/course',  require('./backend/routes/course.js'))
+app.use('/api/authenticate',  require('./routes/authenticate.js'))
+app.use('/api/course',  require('./routes/course.js'))
 
 
 

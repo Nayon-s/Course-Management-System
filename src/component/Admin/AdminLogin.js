@@ -85,7 +85,7 @@ setOtp(e.target.value);
     }
     
    
-    else{
+    // else{
       toast.error('Admin Not Found!', {
         position: "top-center",
         autoClose: 5000,
@@ -96,7 +96,7 @@ setOtp(e.target.value);
         progress: undefined,
         theme: "light"
         });
-    }
+    // }
    
   
   }
