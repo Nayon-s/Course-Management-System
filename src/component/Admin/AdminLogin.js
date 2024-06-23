@@ -34,7 +34,7 @@ setOtp(e.target.value);
     })
   }
   const login=async(e)=>{
-    toast.error('Teacher Not Found!', {
+    toast.error('Director Not Found!', {
       position: "top-center",
       autoClose: 5000,
       hideProgressBar: false,
