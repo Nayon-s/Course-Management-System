@@ -33,16 +33,7 @@ setOtp(e.target.value);
     }
   }
   const login=async(e)=>{
-    toast.error('Teacher Not Found!', {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light"
-      });
+    
     e.preventDefault();
     console.log(credentials)
     const response=await fetch('http://localhost:5000/api/authenticate/login', {
